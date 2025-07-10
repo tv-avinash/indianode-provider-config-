@@ -1,4 +1,5 @@
 host: https://provider.indianode.com
+
 attributes:
   - key: region
     value: asia
@@ -16,6 +17,8 @@ attributes:
     value: 64gb
   - key: ssd
     value: nvme
+  - key: payment
+    value: razorpay
 
 bid_strategy:
   pricing_script: |
@@ -28,7 +31,3 @@ bid_strategy:
 monetization:
   accepted_denoms:
     - uakt
-  payment_processing:
-    enabled: true
-    razorpay: true
-
