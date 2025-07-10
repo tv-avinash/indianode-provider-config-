@@ -1,0 +1,34 @@
+host: https://provider.indianode.com
+attributes:
+  - key: region
+    value: asia
+  - key: country
+    value: india
+  - key: city
+    value: bangalore
+  - key: host
+    value: rtx3090
+  - key: gpu
+    value: nvidia
+  - key: cpu
+    value: i5-14400F
+  - key: ram
+    value: 64gb
+  - key: ssd
+    value: nvme
+
+bid_strategy:
+  pricing_script: |
+    #!/bin/bash
+    echo 'AKASH_CPU_UNIT_PRICE=0.002'
+    echo 'AKASH_MEMORY_UNIT_PRICE=0.002'
+    echo 'AKASH_STORAGE_UNIT_PRICE=0.001'
+    echo 'AKASH_GPU_UNIT_PRICE=0.08'
+
+monetization:
+  accepted_denoms:
+    - uakt
+  payment_processing:
+    enabled: true
+    razorpay: true
+
