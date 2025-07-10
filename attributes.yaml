@@ -1,0 +1,19 @@
+# attributes.yaml
+# Describes your hardware, location, and capabilities on Akash
+
+# Physical & Hardware Tags
+gpu: "true"
+cpu: "intel"
+ram: "64gb"
+ssd: "true"
+network: "high"
+
+# Location Tags
+region: "asia"
+country: "india"
+city: "bangalore"
+
+# Custom Tags (Optional for filtering/search)
+provider: "indianode"
+datacenter: "indianode-local"
+akash_verified: "true"
